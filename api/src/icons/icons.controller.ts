@@ -16,7 +16,7 @@ export class IconsController {
 
   @Post('upload')
   @UseInterceptors(
-    FilesInterceptor('files', 20, {
+    FilesInterceptor('files', 50, {
       storage: memoryStorage(),
       fileFilter: (req, file, cb) => {
         if (
